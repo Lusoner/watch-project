@@ -1,5 +1,6 @@
-console.log(1111);
-onmessage = function(data){
-	console.log(data);
-	postMessage(data+',return a new message return a new message');
-}
+var http = require('http');
+var serv = http.createServer(function(req, res){
+	res.writeHead(200,{'Content-Type':'text/html'});
+	res.end('<marquee>Smashing Node!</marquee>');
+})
+serv.listen(8000);
