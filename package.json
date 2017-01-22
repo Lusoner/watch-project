@@ -1,0 +1,20 @@
+{
+  "name": "web-test",
+  "version": "1.0.0",
+  "description": "Node.js on Docker",
+  "author": "fanhaobai",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3",
+    "iscroll": "^5.2.0",
+    "sass": "^0.5.0",
+    "swiper": "^3.4.1",
+    "webpack": "^1.14.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^1.16.2"
+  }
+}
