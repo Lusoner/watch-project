@@ -12,7 +12,11 @@ var serv = http.createServer(function(req, res){
 	new mongodb.Db('mongotest',server,{}).open(function(error,client){//数据库：mongotest
 	    if(error) throw error;
 		client.collection(table, function(err,collection) {
+			console.log('collection');
+			console.log(collection);
 			collection.find(function(error,cursor){
+				console.log('cursor');
+				console.log(cursor);
 				callback(error,cursor);
 			});
 		});
